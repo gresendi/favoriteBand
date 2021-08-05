@@ -10,7 +10,13 @@
     <style>
       .image{
         width:100%;
-        height: 500px;
+        height: 1500px ;
+      }
+      .youtube
+      {
+        margin:50px;
+        display: flex;
+        justify-content: center;
       }
     </style>
     
@@ -25,17 +31,36 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-          <a class="nav-link" href="#">Members</a>
-          <a class="nav-link" href="#">Upcoming Concerts</a>
+          <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+          <a class="nav-link" href="./members.html">Members</a>
+          <a class="nav-link" href="https://www.songkick.com/artists/520117-arctic-monkeys">Upcoming Concerts</a>
          
         </div>
       </div>
     </div>
   </nav>
   <div class="image">
-    <img src= "arctic monkeys.jpg" alt= "Arctic Monkeys Band Members">
+    <!-- <img  class = "image" src= "arctic monkeys.jpg" alt= "Arctic Monkeys Band Members"> -->
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="arctic monkeys.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="am2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="am1.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+    </div>
   </div>
+  <div class="youtube">
+    <iframe width="900" height="600" src="https://www.youtube.com/embed/bSfQB1h5nYI" title="YouTube video player"
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+  </div>
+
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
